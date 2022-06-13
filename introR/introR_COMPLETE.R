@@ -43,17 +43,17 @@
 # != "is not equal to"
 # ! "is not"
 
-# 5 is equal to 5
-5 == 5        
-
-# 5 is equal to 6
-5 == 6
-
 # 5 is greater than 6
 5 > 6
 
 # 5 is greater than or equal to 6
 5 >= 6
+
+# 5 is equal to 5
+5 == 5        
+
+# 5 is equal to 6
+5 == 6
 
 # 5 is not equal to 6
 !5 == 6
@@ -92,6 +92,9 @@ sqrt(81)
 # Argument: 6 - 14
 abs(6 - 14)
 
+# Goal: Find the square root of the absolute value of 6 - 14
+sqrt(abs(6-14))
+
 # RULE: Functions require specific types of arguments
 sqrt("a")
 
@@ -121,12 +124,12 @@ rnorm() # produces an error
 ## What does this error message tell you?
 
 # Goal: Return 20 random values from a normal distribution
-# that has a mean of 10 and a standard deviation of 6
-rnorm(n = 20, mean = 10, sd = 6)
+# that has a mean of 1 and a standard deviation of 6
+rnorm(n = 20, mean = 1, sd = 6)
 
 ## Do these accomplish the same task?
-rnorm(20, 10, 6)                 # Why might this be a bad idea?
-rnorm(mean = 10, n = 20, sd = 6) # Why might this be a bad idea?
+rnorm(20, 1, 6)                 # Why might this be a bad idea?
+rnorm(mean = 1, n = 20, sd = 6) # Why might this be a bad idea?
 rnorm(n = 20, sd = 6)            # Is this okay?
 
 # ---- Objects ----
@@ -240,18 +243,9 @@ sqrt(FALSE)         # Hint: why is this output different?
 
 # Other common data classes include Factors (categorical groupings) & a variety of Date/Datetime options
 
-# ---- Data Structures ----
+# ---- Data Structures: Vectors ----
 # Objects can contain different structures of data
 # Think of this as the shape or layout of the container that is used to hold an item
-
-# ---- Data Structures: Scalars ----
-# Simplest data structure; 1 element
-pi
-x
-y
-myword
-
-# ---- Data Structures: Vectors ----
 # >1 element; one dimensional
 
 # Example: Look at a built in object containing the alphabet
